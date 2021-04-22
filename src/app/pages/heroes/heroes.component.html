@@ -1,0 +1,52 @@
+<h1>Listado de heroes</h1>
+<hr>
+
+<div class="row">
+    <div class="col text-right">
+        <button class="btn btn-primary" [routerLink]="['/heroe/nuevo']">
+            <i class="fa fa-plus"></i>
+            Agregar
+        </button>
+    </div>
+</div>
+
+<table class="table mt-3 animated fadeIn">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Poder</th>
+            <th scope="col">Vivo</th>
+            <th scope="col">Tools</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="alert alert-warning text-center mt-3">
+    <h3 class="aleter-heading">No hay registros</h3>
+    <p>
+        <i class=" fa fa-exclamation 2x"></i>
+    </p>
+    <p class="mb-0">
+        Espere porfavor
+    </p>
+</div>
+
+<div class="alert alert-info text-center mt-3">
+    <h3 class="aleter-heading">Cargando</h3>
+    <p>
+        <i class=" fa fa-sync-alt fa-spin 2x"></i>
+    </p>
+    <p class="mb-0">
+        Espere porfavor
+    </p>
+</div>
