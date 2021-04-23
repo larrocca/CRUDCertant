@@ -1,10 +1,16 @@
 export class HeroeModel{
-    id?:string
-    nombre:string = '';
-    poder :string = '';
+    nombre:string ;
+    poder :string ;
     vivo :boolean;
+    id?:string
 
-    constructor(){
-        this.vivo = true
+    constructor(
+        nombre: string,
+        poder: string,
+        vivo: boolean,
+    ){
+        this.nombre = nombre
+        this.vivo = vivo
+        this.poder = poder
     }
 }
