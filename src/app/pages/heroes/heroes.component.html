@@ -1,7 +1,7 @@
 <h1>Listado de heroes</h1>
 <hr>
 
-<div class="row">
+<div *ngIf="cargando" class="row">
     <div class="col text-right">
         <button class="btn btn-primary" [routerLink]="['/heroe/nuevo']"> <!--El parametro de la URL va a ser "nuevo" o lo que se le ponga-->
             <i class="fa fa-plus"></i>
@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<table class="table mt-3 animated fadeIn">
+<table *ngIf="cargando" class="table mt-3 animated fadeIn">
     <thead>
         <tr>
             <th scope="col">#</th>
